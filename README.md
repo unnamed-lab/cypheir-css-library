@@ -28,15 +28,13 @@ Using the Cypheir CSS Library in your project is straightforward:
 
 4. **Responsive Design**: Test your application on different devices and adjust any responsive styling if necessary.
 
-# Cypheir CSS Library
-
-Welcome to the Cypheir CSS Library! This open-source project is a collaborative effort by Unnamed and a group of talented frontend developers who are passionate about creating stylish and functional CSS templates to accelerate the development process for fellow developers. We believe that by sharing our expertise, we can help you create beautiful and responsive web applications with ease.
+---
 
 ## Getting Started
 
 To start using Cypheir CSS Library, simply follow these steps:
 
-1. **Installation**: You can either download the library directly from the [GitHub repository](https://github.com/your-username/cypheir-css-library) or include it in your project using a package manager like npm or yarn.
+1. **Installation**: You can either download the library directly from the [GitHub repository](https://github.com/unnamed-lab/cypheir-css-library) or include it in your project using a package manager like npm or yarn.
 
 2. **Integration**: Link the CSS file from the library into your HTML file's `<head>` section to start applying the styles to your web pages.
 
@@ -56,7 +54,7 @@ We welcome contributions from the community to make the Cypheir CSS Library even
 
 4. Push your changes to your forked repository.
 
-5. Open a pull request (PR) against the main repository's `master` branch, detailing the changes you've made and the rationale behind them.
+5. Open a pull request (PR) against the main repository's `main` branch, detailing the changes you've made and the rationale behind them.
 
 We appreciate your contributions and look forward to collaborating with you!
 
