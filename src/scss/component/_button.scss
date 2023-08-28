@@ -1,1 +1,31 @@
 @use "../custom" as *;
+@use "../component/mixins" as *;
+
+.btn {
+    font-family: var(--project-font);
+    height: fit-content;
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: $g-500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    &:hover{
+        @include bg-opacity($g-500, 80);
+        transition: all 500ms ease;
+    }
+    
+    &.dark {
+        color: $white;
+        border: 3px solid $dark;
+        background-color: $dark;
+
+        &:hover {
+            color: $black;
+            background-color: $white;
+            transition: all 500ms ease;
+        }
+    }
+}

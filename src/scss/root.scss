@@ -1,7 +1,18 @@
 @use "./custom" as *;
+@use "./component/typography" as *;
+@use "./component/mixins" as *;
 
 :root {
-  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --navbar-height: 4rem;
+  --navbrand-width: 8rem;
+  --border-radius: 28px;
+  --border-radius-child: calc(var(--border-radius) - 10px);
+
+  @include responsive(mobile) {
+    --navbrand-width: 7rem;
+  }
+
+  font-family: var(--project-font);
   font-weight: 400;
   line-height: 1.5;
   background-color: $white;
@@ -15,18 +26,42 @@
   body {
     margin: 0;
     display: flex;
-    place-items: center;
+    flex-direction: column;
     min-width: 320px;
     min-height: 100vh;
   }
+
+  main {
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    min-height: 50vh;
+    text-align: center;
+    flex-direction: column; 
+    justify-content: center; 
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: var(--navbar-height);
+    padding: 10px 3rem;
+
+    @include responsive (mobile) {
+      padding: 10px 1.5rem;
+    }
+  }
   
   a {
-    font-weight: 500;
+    font-family: var(--project-font);
+    font-weight: 600;
     color: $primary;
     text-decoration: inherit;
 
     &:hover {
-        color: $primary;
+        color: $secondary;
         transition: all 500ms ease;
     }
 }

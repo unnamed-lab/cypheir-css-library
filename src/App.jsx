@@ -1,7 +1,7 @@
-// import { useState } from 'react'
-import './assets/style.css'
+// import { useState } from 'react';
+import './assets/css/style.css';
 
-function App() {
+const App = () => {
   return (
     <>
       <h1>Cypheir CSS Library.</h1> 
