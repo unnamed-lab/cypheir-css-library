@@ -1,8 +1,14 @@
 {
-  "name": "css-project",
+  "name": "cypheir-css-library",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unnamed-lab/cypheir-css-library"
+  },
+  "author": "Anuoluwa Adebayo (Unnamed)",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
